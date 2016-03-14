@@ -43,12 +43,12 @@ setup(
     version=version,
     packages=find_packages(),
     # metadata for upload to PyPI
-    author="Satya Mishra",
-    author_email="qufgmx@gmail.com",
+    author="Krishna Sudhakar",
+    author_email="me@krishnasudhakar@me",
     description="Python interface to ftd2xx.dll from FTDI using ctypes based on d2xx by Pablo Bleyer",
-    license="BSD",
+    license="LGPL",
     keywords="ftd2xx d2xx ftdi",
-    url='https://github.com/snmishra/ftd2xx',  # project home page, if any
+    url='https://github.com/ctrl-shift-esc/ftd2xx',  # project home page, if any
     zip_safe=False,
     test_suite="ftd2xx.tests.t_ftd2xx",
     long_description=long_description,
