@@ -3,9 +3,9 @@ Name: ftd2xx
 Version: bzr14
 Summary: Python interface to ftd2xx.dll from FTDI using ctypes based on d2xx by Pablo Bleyer
 Home-page: UNKNOWN
-Author: Satya Mishra
-Author-email: qufgmx@gmail.com
-License: BSD
+Author: Krishna Sudhakar
+Author-email: me@krishnasudhakar.me
+License: LGPL
 Description: UNKNOWN
 Keywords: ftd2xx d2xx
-Platform: UNKNOWN
+Platform: Windows, Linux
