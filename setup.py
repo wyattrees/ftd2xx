@@ -44,7 +44,7 @@ setup(
     packages=find_packages(),
     # metadata for upload to PyPI
     author="Krishna Sudhakar",
-    author_email="me@krishnasudhakar@me",
+    author_email="me@krishnasudhakar.me",
     description="Python interface to ftd2xx.dll from FTDI using ctypes based on d2xx by Pablo Bleyer",
     license="LGPL",
     keywords="ftd2xx d2xx ftdi",
