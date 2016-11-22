@@ -8,7 +8,7 @@ import sys
 
 if sys.platform == 'win32':
     import _ftd2xx as _ft
-elif sys.platform == 'linux2':
+elif sys.platform.startswith('linux'):
     import _ftd2xx_linux as _ft
 elif sys.platform == 'darwin':
     import _ftd2xx_darwin as _ft
