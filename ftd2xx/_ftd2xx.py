@@ -546,6 +546,12 @@ FT_GetDeviceInfo.argtypes = [FT_HANDLE, POINTER(FT_DEVICE), LPDWORD, PCHAR, PCHA
 FT_GetDeviceInfo.__doc__ = \
 """FT_STATUS FT_GetDeviceInfo(FT_HANDLE ftHandle, FT_DEVICE * lpftDevice, LPDWORD lpdwID, PCHAR SerialNumber, PCHAR Description, LPVOID Dummy)
 ftd2xx.h:596"""
+FT_GetComPortNumber = _libraries['ftd2xx.dll'].FT_GetComPortNumber
+FT_GetComPortNumber.restype = FT_STATUS
+# FT_GetComPortNumber(ftHandle, lplComPortNumber)
+FT_GetComPortNumber.argtypes = [FT_HANDLE, LPWORD]
+FT_GetDeviceInfo.__doc__ = \
+""""FT_STATUS FT_GetComPortNumber(FT_HANDLE ftHandle,  LPWORD lplComPortNumber)"""
 # ftd2xx.h 601
 FT_StopInTask = _libraries['ftd2xx.dll'].FT_StopInTask
 FT_StopInTask.restype = FT_STATUS

@@ -313,6 +313,11 @@ class FTD2XX(object):
         return {'type': deviceType.value, 'id': deviceId.value,
                 'description': desc.value, 'serial': serial.value}
 
+    def getComPort(self):
+        comPort = _ft.WORD()
+        call_ft(_ft.FT_GetComPortNumber, self.handle, c.byref(comPort))
+        return comPort.value
+
     def stopInTask(self):
         call_ft(_ft.FT_StopInTask, self.handle)
         return None
